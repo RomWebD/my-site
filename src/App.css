@@ -1,0 +1,154 @@
+:root {
+  --mainDark: rgb(0, 0, 0);
+  --mainGrey: rgb(90, 90, 89);
+  --mainLight: rgb(223, 11, 11);
+  --mainWhite: rgb(255, 255, 255);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.text-link {
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  background-color: #cc7fff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.text-link:hover {
+  border-radius: 35% 15%;
+  color: black;
+  background: rgb(255, 0, 200, 0.5);
+  transition: 0.7s;
+  font-size: 18px;
+}
+
+/* Header Style*/
+.header {
+  border-radius: 0 0 0 15%;
+  font-family: monospace;
+}
+
+.header:hover {
+  font-size: 18px;
+  background: #edc7b7;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.search_button {
+  margin: 0 15px 0 0;
+  width: 200px;
+  padding: 5px 0 5px 0;
+  border: 1px solid #666;
+  border-radius: 15%;
+}
+.search_button:focus {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*   End Header styling*/
+
+.footer {
+  text-align: center;
+  background-color: rgb(189, 179, 186);
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  border-radius: 10% 10% 0 0;
+  position: bottom;
+}
+
+.tabstyle {
+  margin-bottom: 5rem;
+}
+#link {
+  color: #000;
+  margin-bottom: 25px;
+}
+#link:hover {
+  border: 0 !important;
+}
+
+.stanbottom {
+}
+.stanbottom:hover {
+  font-size: 20px;
+  transition: 1.2s;
+}
+
+.error-actions {
+  margin-bottom: 400px;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 590px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 319px) {
+  .container {
+    max-width: none;
+  }
+}
+
+.body_style {
+  background-color: #f6f4e8;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
