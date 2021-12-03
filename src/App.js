@@ -16,10 +16,10 @@ function App() {
       <Header />
       <Router>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/price" component={Price} />
-            <Route exact path="/contacts" component={Contacts} />
-            <Route exact path="/aboutus" component={AboutUs} />
+            <Route exact path="https://romwebd.github.io/my-site/" component={Home} />
+            <Route exact path="https://romwebd.github.io/my-site/price" component={Price} />
+            <Route exact path="https://romwebd.github.io/my-site/contacts" component={Contacts} />
+            <Route exact path="https://romwebd.github.io/my-site/aboutus" component={AboutUs} />
             <Route component={NotFoundPage} />
 
           </Switch>
