@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/layouts/Header";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from "./Components/Pages/Home";
 import Contacts from "./Components/Pages/Contacts";
 import Price from "./Components/Pages/Price";
@@ -16,10 +16,10 @@ function App() {
       <Header />
       <Router>
           <Switch>
-            <Route exact path="https://romwebd.github.io/my-site/" component={Home} />
-            <Route exact path="https://romwebd.github.io/my-site/price" component={Price} />
-            <Route exact path="https://romwebd.github.io/my-site/contacts" component={Contacts} />
-            <Route exact path="https://romwebd.github.io/my-site/aboutus" component={AboutUs} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/price" component={Price} />
+            <Route exact path="/contacts" component={Contacts} />
+            <Route exact path="/aboutus" component={AboutUs} />
             <Route component={NotFoundPage} />
 
           </Switch>

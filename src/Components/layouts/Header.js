@@ -1,14 +1,6 @@
 import React, { Component } from "react";
-import {
-  Button,
-  Container,
-  FormControl,
-  Nav,
-  Navbar,
-  Form,
-} from "react-bootstrap";
+import { Button, Container, Nav, Navbar, Form } from "react-bootstrap";
 import logo from "../../logo.svg";
-import { Link } from "react-router-dom";
 export default class Header extends Component {
   render() {
     return (
@@ -18,9 +10,7 @@ export default class Header extends Component {
           collapseOnSelect
           expand="lg"
           variant="light"
-          class="container br-25"
           className="header"
-          height="10px"
         >
           <Container>
             <Navbar.Brand href="/">
@@ -31,13 +21,13 @@ export default class Header extends Component {
                 className="d-inline-block align-top"
                 alt="Logo"
               />{" "}
-              Сайт будівельних робіт
+              Виконання всіх будівельних робів
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="stanbottom mr-auto">
                 <Nav.Link href="/">
-                  Домашня сторінка&nbsp;<i class="fas fa-home"></i>
+                  Домашня сторінка&nbsp;<i className="fas fa-home"></i>
                 </Nav.Link>
               </Nav>
               <Nav className="stanbottom mr-auto">
@@ -48,13 +38,22 @@ export default class Header extends Component {
                 <Nav.Link href="/not-found-page"></Nav.Link>
               </Nav>
 
-              <Form inline >
-                <i class="fas fa-search mr-3" aria-hidden="true" />
+              <Form inline>
+                <i className="fas fa-search mr-3" aria-hidden="true" />
 
-                <input type="text" placeholder=" Введіть текст" className="search_button"/>
+                <input
+                  type="text"
+                  placeholder=" Введіть текст"
+                  className="search_button"
+                />
 
                 <Button
-                  style={{ background: "rgba(0,0,0,0.8)", color: "white", margin:"0 auto", marginTop:"2px" }}
+                  style={{
+                    background: "rgba(0,0,0,0.8)",
+                    color: "white",
+                    margin: "0 auto",
+                    marginTop: "2px",
+                  }}
                 >
                   Пошук
                 </Button>

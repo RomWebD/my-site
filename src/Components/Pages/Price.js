@@ -12,31 +12,31 @@ export default class Price extends Component {
               <Col sm={3}>
                 <Nav variant="light" className="flex-column mt-2">
                   <Nav.Item>
-                    <Nav.Link eventKey="first" className="text-link">
+                    <Nav.Link eventKey="first" className="price-link">
                       Стіни
                     </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link className="text-link" eventKey="second">
+                    <Nav.Link className="price-link" eventKey="second">
                       Стелі
                     </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link className="text-link" eventKey="third">
+                    <Nav.Link className="price-link" eventKey="third">
                       Сантехнічні роботи
                     </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link className="text-link" eventKey="fourth">
+                    <Nav.Link className="price-link" eventKey="fourth">
                       Електромонтажні Роботи
                     </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link className="text-link" eventKey="five">
+                    <Nav.Link className="price-link" eventKey="five">
                       Столярні Роботи
                     </Nav.Link>
                   </Nav.Item>

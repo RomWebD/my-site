@@ -2,14 +2,13 @@
 import React, { Component } from "react";
 import { InfoConsumer } from "../context";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { Container, Tab, Nav, Row, Col } from "react-bootstrap";
+import { Tab, Nav } from "react-bootstrap";
 class AboutUs extends Component {
   render() {
     return (
       <InfoConsumer>
         {(data) => {
-          const { id, headerTitle, headerText, title, description, img, maps } =
+          const { headerTitle, headerText, title, description, img, maps } =
             data.detailInfo;
 
           return (
@@ -22,13 +21,12 @@ class AboutUs extends Component {
                 <div className="icon mt-5">
                   <div className="row justify-content-center">
                     <div className="col-2">
-                      <a
+                      <Nav.Link
                         href="https://www.facebook.com/profile.php?id=100009304363626"
                         target="_blank"
-                        rel=" noreferrer"
                       >
                         <i className="fab fa-facebook-f" />
-                      </a>
+                      </Nav.Link>
                     </div>
                     <div className="col-2">
                       <i className="fab fa-twitter" />
@@ -44,13 +42,13 @@ class AboutUs extends Component {
                     </div>
                     <div>
                       <div className="col-2">
-                        <a
+                        <Nav.Link
                           href="https://www.instagram.com/roman_0__/"
                           target="_blank"
                           rel=" noreferrer"
                         >
                           <i className="fab fa-instagram" />
-                        </a>
+                        </Nav.Link>
                       </div>
                     </div>
                   </div>
@@ -61,34 +59,35 @@ class AboutUs extends Component {
                 <ul className="nav  justify-content-center">
                   <li>
                     <Nav.Item>
-                      <Nav.Link eventKey="aboutPlace">
-                        <a id="link" className="nav-link" href="#aboutPlace">
-                          About Place
-                        </a>
+                      <Nav.Link
+                        eventKey="aboutPlace"
+                        id="link"
+                        className="nav-link"
+                        href="#aboutPlace"
+                      >
+                        About Place
                       </Nav.Link>
                     </Nav.Item>
                   </li>
                   <li>
                     <Nav.Item>
-                      <Nav.Link eventKey="reviews">
-                        <a
+                      <Nav.Link eventKey="reviews"
                           id="link"
                           href="#reviews"
                           className="nav-link active"
                           data-toggle="tab"
                         >
                           Reviews
-                        </a>
+                       
                       </Nav.Link>
                     </Nav.Item>
                   </li>
 
                   <li>
                     <Nav.Item>
-                      <Nav.Link eventKey="map">
-                        <a id="link" href="#map" className="nav-link active">
+                      <Nav.Link eventKey="map" id="link" href="#map" className="nav-link active">
                           Map
-                        </a>
+                       
                       </Nav.Link>
                     </Nav.Item>
                   </li>

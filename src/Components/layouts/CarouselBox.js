@@ -13,70 +13,54 @@ export default class CarouselBox extends Component {
         className="container"
           
         >
-          <Carousel.Item>
+          <Carousel.Item >
             <img
-              class="img-fluid"
-              className="d-block w-100"
+              className="slider d-block w-100"
               height="600"
               src={firstImg}
               alt="Repair of apartments"
             />
-            <Carousel.Caption>
-              <h3>Image of Repair</h3>
-              <p>Remont</p>
-            </Carousel.Caption>
+     
           </Carousel.Item>
 
-          <Carousel.Item>
+          <Carousel.Item className="slider">
             <img
-              className="d-block w-100"
+              className="slider d-block w-100"
               src={secondImg}
               alt="Repair of apartments"
               height="600"
             />
-            <Carousel.Caption>
-              <h3>Image of Repair</h3>
-              <p>Remont</p>
-            </Carousel.Caption>
+        
           </Carousel.Item>
 
-          <Carousel.Item>
+          <Carousel.Item className="slider">
             <img
-              className="d-block w-100"
+              className="slider d-block w-100"
               src={thirdImg}
               alt="Repair of apartments"
               height="600"
             />
-            <Carousel.Caption>
-              <h3>Image of Repair</h3>
-              <p>Remont</p>
-            </Carousel.Caption>
+         
           </Carousel.Item>
 
-          <Carousel.Item>
+          <Carousel.Item className="slider">
             <img
-              className="d-block w-100"
+              className="slider d-block w-100"
               src={fourImg}
               alt="Repair of apartments"
               height="600"
             />
-            <Carousel.Caption>
-              <h3>Image of Repair</h3>
-              <p>Remont</p>
-            </Carousel.Caption>
+          
           </Carousel.Item>
 
-          <Carousel.Item>
+          <Carousel.Item className="slider">
             <img
-              className="d-block w-100"
+              className="slider d-block w-100"
               src={fiveImg}
               alt="Repair of apartments"
               height="600"
             />
-            <Carousel.Caption>
-              <h3>Image of Repair</h3>
-              <p>Remont</p>
-            </Carousel.Caption>
+        
           </Carousel.Item>
         </Carousel>
       </div>
